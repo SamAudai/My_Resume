@@ -1,0 +1,43 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule  } from "@angular/forms";
+
+import { AppComponent } from './app.component';
+import { AboutComponent } from './about/about.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { EducationComponent } from './education/education.component';
+import { SkillComponent } from './skill/skill.component';
+import { CourseComponent } from './course/course.component';
+import { MycvComponent } from './home/mycv.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MyserviceService } from './myservice.service'
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    AboutComponent,
+    NavigationComponent,
+    ExperienceComponent,
+    EducationComponent,
+    SkillComponent,
+    CourseComponent,
+    MycvComponent,
+    PageNotFoundComponent,  
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
+  providers: [MyserviceService],
+  entryComponents: [
+    MycvComponent
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

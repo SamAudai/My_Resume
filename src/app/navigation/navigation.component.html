@@ -1,0 +1,26 @@
+<!-- Navigation-->
+<form #navForm="ngForm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <div class="navbar-brand">
+            <a class="navbar-brand" routerLink="home">
+                <span class="d-block d-lg-none">Audai Alsharani</span>
+                <span class="d-none d-lg-block"><img class="img-profile rounded-circle mx-auto mb-2"
+                    src="assets/img/profile.jpg" alt="Image not found" /></span>
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ul_content">
+            <span class="navbar-toggler-icon"></span>            
+        </button>        
+        <div class="collapse navbar-collapse" id="ul_content">
+            <ul class="navbar-nav list-group" id="list_1">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" routerLink="about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" routerLink="experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" routerLink="education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" routerLink="skill">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" routerLink="interest">Interests</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" routerLink="course">Awards</a></li>
+            </ul>
+        </div>
+    </nav>
+</form>
+<router-outlet></router-outlet>
