@@ -11,7 +11,6 @@ import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { SkillComponent } from './skill/skill.component';
 import { CourseComponent } from './course/course.component';
-import { MycvComponent } from './home/mycv.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MyserviceService } from './myservice.service'
 
@@ -23,8 +22,7 @@ import { MyserviceService } from './myservice.service'
     ExperienceComponent,
     EducationComponent,
     SkillComponent,
-    CourseComponent,
-    MycvComponent,
+    CourseComponent,    
     PageNotFoundComponent,  
   ],
   imports: [
@@ -35,9 +33,7 @@ import { MyserviceService } from './myservice.service'
     ReactiveFormsModule
   ],
   providers: [MyserviceService],
-  entryComponents: [
-    MycvComponent
-  ],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }

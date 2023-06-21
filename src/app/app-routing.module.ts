@@ -5,7 +5,6 @@ import { AboutComponent } from './about/about.component';
 import { CourseComponent } from './course/course.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
-import { MycvComponent } from './home/mycv.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SkillComponent } from './skill/skill.component';
 
@@ -13,14 +12,8 @@ import { SkillComponent } from './skill/skill.component';
 const routes: Routes = [
   {
     path: '',      //this route for home page
-    redirectTo: '/home',
-    //component: MycvComponent,
+    redirectTo: '/about',    
     pathMatch: 'full'
-  },
-  {
-    path: "home",
-    component: MycvComponent,
-    pathMatch: 'full',  
   },
   {
     path: "about",
@@ -39,12 +32,12 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'course',
+    path: 'courses',
     component: CourseComponent,
     pathMatch: 'full'
   },
   {
-    path: 'skill',
+    path: 'skills',
     component: SkillComponent,
     pathMatch: 'full'
   },

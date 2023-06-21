@@ -20,14 +20,7 @@ export class CourseComponent implements OnInit{
   constructor(public service:MyserviceService){}
 
   ngOnInit(): void {
-    this.name = this.service.titleName("Course & Certifications");
+    this.name = this.service.titleName("Courses");
   }
-  
-  //Reactive Form
-  courseForm = new FormGroup({ 
-    courseName:new FormControl(''),
-    courseGiver:new FormControl(''),
-    courseDate:new FormControl('')
-  });
-
+ 
 }
