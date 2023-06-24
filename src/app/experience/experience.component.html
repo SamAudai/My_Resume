@@ -2,45 +2,13 @@
 <section class="resume-section" id="experience">
     <div class="resume-section-content">
         <h2 class="mb-5">{{name}}</h2>
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+        <div *ngFor="let item of experience" class="d-flex flex-column flex-md-row justify-content-between mb-4">
             <div class="flex-grow-1">
-                <h3 class="mb-0">Applications Designer</h3>
-                <div class="subheading mb-3">Freelancer</div>
-                <p>Web and desktop applications Designed.</p>
+                <h3 class="mb-0">{{item.workName}}</h3>
+                <div class="subheading mb-3">{{item.workPlace}}</div>
+                <p>{{item.mission}}</p>
             </div>
-            <div class="flex-shrink-0"><span class="text-primary">2019 - Present</span></div>
-        </div>
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Applications Developer</h3>
-                <div class="subheading mb-3">Freelancer</div>
-                <p>Web and desktop applications Development.</p>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">2017 - Persent</span></div>
-        </div>
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Development of e-business and desktop applications</h3>
-                <div class="subheading mb-3">Swaida Health Directorate / Informatics Department</div>
-                <p>Development of e-business and desktop applications.</p>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">2017 - Persent</span></div>
-        </div>
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Database systems management</h3>
-                <div class="subheading mb-3">Swaida Health Directorate / Informatics Department</div>
-                <p>Database systems management.</p>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">2016 - Persent</span></div>
-        </div>
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">IT support</h3>
-                <div class="subheading mb-3">Swaida Health Directorate / Informatics Department</div>
-                <p>IT support.</p>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">2015 - 2019</span></div>
-        </div>
+            <div class="flex-shrink-0"><span class="text-primary">{{item.startDate}} - {{item.endtDate}}</span></div>
+        </div>        
     </div>
 </section>

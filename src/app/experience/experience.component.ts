@@ -1,6 +1,8 @@
 import { Component , OnInit } from '@angular/core';
 import { flyInOut } from '../animations/app-animation';
-import { MyserviceService } from '../myservice.service';
+import { IExperience } from '../models/experiences';
+import { ExperiencesService } from '../services/experiences.service';
+
 
 @Component({
   selector: 'app-experience',
@@ -15,13 +17,16 @@ import { MyserviceService } from '../myservice.service';
 export class ExperienceComponent implements OnInit{
 
   name:string = "";
+  experience!:Array<IExperience>;
 
-  constructor(public service:MyserviceService){}
+  constructor(public service:ExperiencesService){}
 
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-    this.name = this.service.titleName("Experiance");
+    this.name = "Experiance";
+    //this.service.getExperiencesByObservable().subscribe(res => this.experience=res);
+    this.service.getExperiencesByPromise().then(res => this.experience=res);
   }
 
 }

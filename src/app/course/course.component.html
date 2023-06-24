@@ -2,37 +2,11 @@
 <section class="resume-section">
     <div class="resume-section-content">
         <h2 class="mb-5">{{name}}</h2>
-        <ul>
+        <ul *ngFor="let item of courses">
             <li class="mb-4">
                 <span><i class="fas fa-trophy text-warning"></i></span>
-                University of California San Diego / Data Structures and Algorithms / Present
-            </li>
-            <li class="mb-4">
-                <span><i class="fas fa-trophy text-warning"></i></span>
-                Google / Google IT Support Professional Certificate / Present
-            </li>
-            <li class="mb-4">
-                <span><i class="fas fa-trophy text-warning"></i></span>
-                University of ALBERTA / Software Product Management / Jan 8, 2022
-            </li>
-            <li class="mb-4">
-                <span><i class="fas fa-trophy text-warning"></i></span>
-                The Hong Kong University of Science and Technology / Full Stack Web Development with Angular / Aug 12,
-                2021
-            </li>
-            <li class="mb-4">
-                <span><i class="fas fa-trophy text-warning"></i></span>
-                IBM / Introduction to Data Analytics / Jul 29, 2021
-            </li>
-            <li class="mb-4">
-                <span  ><i class="fas fa-trophy text-warning"></i></span>
-                University of Minnesota / Software Development Lifecycle / Jul 14, 2021
-            </li>
-            <li class="mb-4">
-                <span><i class="fas fa-trophy text-warning"></i></span>
-                University of Michigan / Python for Everybody / Jun 11, 2021
-            </li>
+                {{item.certificate}} / {{item.university}} / {{item.date}}
+            </li>            
         </ul>
     </div>
-
 </section>

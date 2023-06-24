@@ -1,20 +1,10 @@
 <!-- Skills-->
 <section class="resume-section" id="skills">
     <div class="resume-section-content">
-        <h2 class="mb-5">Skills</h2>
+        <h2 class="mb-5">{{name}}</h2>
         <div class="subheading mb-2">Programming Languages & Tools</div>
         <ul class="list-inline dev-icons">
-            <li class="list-inline-item"><img src="../../assets/img/file_type_html_icon_130541.svg"></li>
-            <li class="list-inline-item"><img src="../../assets/img/4202020css3htmllogosocialsocialmedia-115668_115633.svg"></li>
-            <li class="list-inline-item"><img src="../../assets/img/javascript_icon_130900.svg"></li>
-            <li class="list-inline-item"><img src="../../assets/img/file_type_angular_icon_130754.svg"></li>            
-            <li class="list-inline-item"><img src="../../assets/img/brand_node_icon_157859.svg"></li>
-            <li class="list-inline-item"><img src="../../assets/img/sass_lang_logo_icon_168004.svg"></li>           
-            <li class="list-inline-item"><img src="../../assets/img/java_original_wordmark_logo_icon_146459.svg"></li>
-            <li class="list-inline-item"><img src="../../assets/img/python_vertical_logo_icon_168039.svg"></li>
-            <li class="list-inline-item"><img src="../../assets/img/c_sharp_icon_213045.svg"></li>
-            <li class="list-inline-item"><img src="../../assets/img/c_icon_132529.svg"></li>
-            <li class="list-inline-item"><img src="../../assets/img/dot_net_plain_wordmark_logo_icon_146545.svg"></li>
+            <li *ngFor="let item of skill" class="list-inline-item"><img src="{{item.image}}"></li>                         
         </ul>
         <div class="subheading mb-3 mt-5">Workflow</div>
         <ul>

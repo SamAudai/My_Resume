@@ -1,6 +1,7 @@
 import { Component , OnInit} from '@angular/core';
 import { flyInOut } from '../animations/app-animation';
-import { MyserviceService } from '../myservice.service';
+import { EducationService } from '../services/education.service';
+import { Ieducation } from '../models/education';
 
 @Component({
   selector: 'app-education',
@@ -13,13 +14,16 @@ import { MyserviceService } from '../myservice.service';
   animations: [flyInOut()] 
 })
 export class EducationComponent implements OnInit{
-
+  
   name:string = "";
+  edu!:Array<Ieducation>;
 
-  constructor(public service:MyserviceService){}
+  constructor(public componentService:EducationService){}
 
-  ngOnInit(): void {
-    this.name = this.service.titleName("Education");
+  ngOnInit(): void {    
+    this.name = 'Education';
+    //this.componentService.getEducationByURL().subscribe(res=>this.edu=res);
+    this.componentService.getEducationByPromise().then(res=>this.edu=res);
   }
 
 }

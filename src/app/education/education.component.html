@@ -2,23 +2,14 @@
 <section class="resume-section" id="education">
     <div class="resume-section-content">
         <h2 class="mb-5">{{name}}</h2>
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+        <div *ngFor="let item of edu" class="d-flex flex-column flex-md-row justify-content-between mb-4">
             <div class="flex-grow-1">
-                <h3 class="mb-0">University of Damascus</h3>
-                <div class="subheading mb-0">Bachelor in Information Technology Engineering</div>
-                <div class="subheading mb-3">Software Engineering</div>                
-                <p>GPA: 3.23</p>
+                <h3 class="mb-0">{{item.university}}</h3>
+                <div class="subheading mb-0">{{item.certificate}}</div>
+                <div class="subheading mb-3">{{item.spacialize}}</div>                
+                <p>GPA: {{item.gba}}</p>
             </div>
-            <div class="flex-shrink-0"><span class="text-primary">2014 - 2019</span></div>
-        </div>
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Technical Institute for Applied Industries</h3>
-                <div class="subheading mb-0">Diploma in Electron Sciences</div>
-                <div class="subheading mb-3">Industrial Electronics</div>
-                <p>GPA: 3.56</p>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">2004 - 2006</span></div>
+            <div class="flex-shrink-0"><span class="text-primary">{{item.startDate}} - {{item.graduatetDate}}</span></div>
         </div>
     </div>
 </section>

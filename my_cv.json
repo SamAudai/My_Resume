@@ -1,0 +1,181 @@
+{
+  "detaile": 
+    {      
+      "fullName": "Audai Salman Alsharani",
+      "image": "images/profile.png",
+      "email": "audaisam5@gmail.com",
+      "phone": "+963 931 652 715",
+      "address": "Swaida, Syria",
+      "socialMedia": [{"facebook":"https://www.facebook.com/audai0"}, {"linkedin":"https://linkedin.com/in/audai-alsh-arani-100738211"}, {"instagram":""}, {"whatsApp":""}, {"telegram":""}],      
+      "description": "I am a very organized person, hardworking and ambitious. I love teamwork and I am looking for a real opportunity in a respected organization to utilize my personal skills And technology for the growth of the organization and also to enhance my knowledge of everything new in the IT sector."                          
+    },
+
+  "education": [
+    {
+      "id": "0",
+      "university": "University of Damascus",
+      "certificate": "Bachelor in Information Technology Engineering",
+      "spacialize": "Software Engineering",
+      "image": "",
+      "gba": "2.75",      
+      "startDate": "2014",
+      "graduatetDate": "2019"
+    },
+    {
+      "id": "1",
+      "university": "Technical Institute for Applied Industries",
+      "certificate": "Diploma in Electron Sciences",
+      "spacialize": "Industrial Electronics",
+      "image": "",
+      "gba": "3",      
+      "startDate": "2004",
+      "graduatetDate": "2006"
+    }
+  ],
+
+  "experience": [
+    {
+      "id": "0",
+      "workName": "Applications Designer",
+      "workPlace": "Freelancer",
+      "mission": "Web and desktop applications Designed.",
+      "startDate": "2019",
+      "endtDate": "Persent"
+    },
+    {
+      "id": "1",
+      "workName": "Applications Developer",
+      "workPlace": "Freelancer",
+      "mission": "Web and desktop applications Development.",
+      "startDate": "2017",
+      "endtDate": "Persent"
+    },
+    {
+      "id": "2",
+      "workName": "Development of e-business and desktop applications",
+      "workPlace": "Swaida Health Directorate / Informatics Department",
+      "mission": "Development of e-business and desktop applications.",
+      "startDate": "2017",
+      "endtDate": "Persent"
+    },
+    {
+      "id": "3",
+      "workName": "Database systems management",
+      "workPlace": "Swaida Health Directorate / Informatics Department",
+      "mission": "Database systems management.",
+      "startDate": "2016",
+      "endtDate": "Persent"
+    },
+    {
+      "id": "4",
+      "workName": "IT support",
+      "workPlace": "Swaida Health Directorate / Informatics Department",
+      "mission": "IT support.",
+      "startDate": "2015",
+      "endtDate": "2019"
+    }
+  ],
+
+  "courses": [
+    {
+      "id": "0",
+      "certificate": "Data Structures and Algorithms",
+      "university":"University of California San Diego",
+      "image": "images/alberto.png",
+      "date": "Persent"
+    },
+    {
+      "id": "1",
+      "certificate": "Google IT Support Professional Certificate",
+      "university":"Google",
+      "image": "images/alberto.png",
+      "date": "Persent"      
+    },
+    {
+      "id": "2",
+      "certificate": "Software Product Management",
+      "university":"University of ALBERTA",
+      "image": "images/alberto.png",
+      "date": "Jan 8, 2022"
+    },
+    {
+      "id": "3",
+      "certificate": "Full Stack Web Development with Angular",
+      "university":"The Hong Kong University of Science and Technology",
+      "image": "images/alberto.png",
+      "date": "Aug 12, 2021"
+    },
+    {
+      "id": "4",
+      "certificate": "Introduction to Data Analytics",
+      "university":"IBM",
+      "image": "images/alberto.png",
+      "date": "Jul 29, 2021"
+    },
+    {
+      "id": "5",
+      "certificate": "Software Development Lifecycle",
+      "university":"University of Minnesota",
+      "image": "images/alberto.png",
+      "date": "Jul 14, 2021"
+    },
+    {
+      "id": "6",
+      "certificate": "Python for Everybody",
+      "university":"University of Michigan",
+      "image": "images/alberto.png",
+      "date": "Jun 11, 2021"
+    }
+  ],
+  
+  "skills": [
+    {
+      "id": 0,
+      "name": " ",
+      "image": "../assests/img/html.svg",
+      "value": 0      
+    },
+    {
+      "id": 1,
+      "name": " ",
+      "image": "../assets/img/css.svg",
+      "value": 0      
+    },
+    {
+      "id": 2,
+      "name": " ",
+      "image": "../assets/img/c.svg",
+      "value": 0      
+    },
+    {
+      "id": 3,
+      "name": " ",
+      "image": "../assets/img/c_sharp.svg",
+      "value": 0      
+    },
+    {
+      "id": 4,
+      "name": " ",
+      "image": "../assets/img/dot_net.svg",
+      "value": 0      
+    },
+    {
+      "id": 5,
+      "name": " ",
+      "image": "../assets/img/java.svg",
+      "value": 0      
+    },
+    {
+      "id": 6,
+      "name": " ",
+      "image": "../assets/img/javascript.svg",
+      "value": 0      
+    },
+    {
+      "id": 7,
+      "name": " ",
+      "image": "../assets/img/node.svg",
+      "value": 0      
+    }
+  ]
+}
