@@ -6,14 +6,13 @@
                 src="assets/img/profile.jpg" alt="" />
         </span>
     </i>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ul_content"
-        aria-controls="ul_content" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ul_content">
         <span class="navbar-toggler-icon"></span>
-    </button>
+    </a>
     <div class="collapse navbar-collapse" id="ul_content">
         <ul class="navbar-nav list-group" id="list_1">
-            <li class="nav-item" *ngFor="let name of names"><a class="nav-link" 
-                    routerLink="{{name}}">{{name}}</a>
+            <li class="nav-item" *ngFor="let name of names">
+                <a class="nav-link" routerLink="{{name}}">{{name}}</a>
             </li>
         </ul>
     </div>

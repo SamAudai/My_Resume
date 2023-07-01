@@ -17,29 +17,23 @@ const routes: Routes = [
   },
   {
     path: "about",
-    component: AboutComponent,
-    pathMatch: 'full',   
-
+    component: AboutComponent
   },
   {
     path: "education",
-    component: EducationComponent,
-    pathMatch: 'full',    
+    component: EducationComponent    
   },
   {
     path: 'experience',
-    component: ExperienceComponent,
-    pathMatch: 'full'
+    component: ExperienceComponent
   },
   {
     path: 'courses',
-    component: CourseComponent,
-    pathMatch: 'full'
+    component: CourseComponent
   },
   {
     path: 'skills',
-    component: SkillComponent,
-    pathMatch: 'full'
+    component: SkillComponent
   },
   {
     path: '**',
