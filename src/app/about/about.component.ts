@@ -30,7 +30,7 @@ export class AboutComponent implements OnInit{
     this.setSkill();
     setInterval(()=>{
       this.changeSkill();
-    }, 3000);
+    }, 5000);
   }
 
   setSkill():void{
