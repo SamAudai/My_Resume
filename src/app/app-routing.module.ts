@@ -12,7 +12,8 @@ import { SkillComponent } from './skill/skill.component';
 const routes: Routes = [
   {
     path: '',      //this route for home page
-    component: AboutComponent
+    redirectTo: '/My_Resume/',    
+    pathMatch: 'full'
   },
   {
     path: "about",
@@ -42,7 +43,7 @@ const routes: Routes = [
 
 export function initializeRouter(router: Router) {
   return () => {
-    router.navigateByUrl('/'); // Navigate to the about route
+    router.navigateByUrl('/My_Resume/'); // Navigate to the about route
   };
 }
 
