@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
+import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, initializeRouter } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule  } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
@@ -13,6 +13,7 @@ import { EducationComponent } from './education/education.component';
 import { SkillComponent } from './skill/skill.component';
 import { CourseComponent } from './course/course.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { Router } from '@angular/router';
 
 
 @NgModule({
@@ -34,7 +35,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: APP_INITIALIZER,
+      useFactory: initializeRouter,
+      multi: true,
+      deps: [Router]
+    }
+  ],
   
   bootstrap: [AppComponent]
 })

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 
 @Component({
@@ -7,9 +7,15 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./app.component.css']  
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   constructor(public formBuilder:FormBuilder){
     
   }
   title = 'My Resume';
+  
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    
+  }
 }

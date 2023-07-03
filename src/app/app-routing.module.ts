@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Router, RouterModule, Routes } from '@angular/router';
 
 import { AboutComponent } from './about/about.component';
 import { CourseComponent } from './course/course.component';
@@ -40,6 +40,12 @@ const routes: Routes = [
     component: PageNotFoundComponent
   }
 ];
+
+export function initializeRouter(router: Router) {
+  return () => {
+    router.navigateByUrl('/about'); // Navigate to the about route
+  };
+}
 
 @NgModule({
   imports: [RouterModule.forRoot(routes),
