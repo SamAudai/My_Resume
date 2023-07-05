@@ -12,7 +12,7 @@ import { SkillComponent } from './skill/skill.component';
 const routes: Routes = [
   {
     path: '',      //this route for home page
-    redirectTo: "/about",    
+    redirectTo: "/",    
     pathMatch: 'full'
   },
   {
@@ -48,8 +48,7 @@ const routes: Routes = [
 } */
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{useHash:false}),
-    RouterModule],    
+  imports: [RouterModule.forRoot(routes,{useHash:false})],    
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
