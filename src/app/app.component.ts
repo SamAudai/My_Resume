@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import { FormBuilder } from '@angular/forms';
 })
 
 export class AppComponent implements OnInit {
-  constructor(public formBuilder:FormBuilder){
+  constructor(){
     
   }
   title = 'My Resume';

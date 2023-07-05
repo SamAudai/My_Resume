@@ -41,14 +41,14 @@ const routes: Routes = [
   }
 ];
 
-export function initializeRouter(router: Router) {
+/* export function initializeRouter(router: Router) {
   return () => {
     router.navigateByUrl("/"); // Navigate to the about route
   };
-}
+} */
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes),
+  imports: [RouterModule.forRoot(routes,{useHash:false}),
     RouterModule],    
   exports: [RouterModule]
 })
