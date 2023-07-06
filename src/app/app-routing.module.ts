@@ -12,7 +12,7 @@ import { SkillComponent } from './skill/skill.component';
 const routes: Routes = [
   {
     path: '',      //this route for home page
-    redirectTo: "about",    
+    redirectTo: "/about",    
     pathMatch: 'full'
   },
   {
