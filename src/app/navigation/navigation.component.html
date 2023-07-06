@@ -6,10 +6,14 @@
                 src="assets/img/profile.jpg" alt="" />
         </span>
     </i>
-    <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ul_content">
-        <span class="navbar-toggler-icon"></span>
-    </a>
-    <div class="collapse navbar-collapse" id="ul_content">
+
+    <a class="navbar-toggler text-white rounded" 
+            type="button" data-bs-toggle="collapse" data-bs-target="#ul_content" >
+        Menu
+        <i class="fas fa-bars"></i>
+      </a>
+
+    <div class="collapse navbar-collapse" id="ul_content" (click)="hideNavbarCollapse()">
         <ul class="navbar-nav list-group" id="list_1">
             <li class="nav-item" *ngFor="let name of names">
                 <a class="nav-link" routerLink="{{name}}">{{name}}</a>

@@ -5,11 +5,11 @@
         <div *ngFor="let item of edu" class="d-flex flex-column flex-md-row justify-content-between mb-4">
             <div class="flex-grow-1">
                 <h3 class="mb-0">{{item.university}}</h3>
-                <div class="subheading mb-0">{{item.certificate}}</div>
-                <div class="subheading mb-3">{{item.spacialize}}</div>                
+                <div class="subheading mb-0" id="certificate">{{item.certificate}}</div>
+                <div class="subheading mb-3" id="spacialize">{{item.spacialize}}</div>                
                 <p>GPA: {{item.gba}}</p>
             </div>
-            <div class="flex-shrink-0"><span class="text-primary">{{item.startDate}} - {{item.graduatetDate}}</span></div>
+            <div class="flex-shrink-0"><span id="date">{{item.startDate}} - {{item.graduatetDate}}</span></div>
         </div>
     </div>
 </section>

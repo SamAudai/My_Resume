@@ -5,10 +5,10 @@
         <div *ngFor="let item of experience" class="d-flex flex-column flex-md-row justify-content-between mb-4">
             <div class="flex-grow-1">
                 <h3 class="mb-0">{{item.workName}}</h3>
-                <div class="subheading mb-3">{{item.workPlace}}</div>
+                <div class="subheading mb-3" id="workPlace">{{item.workPlace}}</div>
                 <p>{{item.mission}}</p>
             </div>
-            <div class="flex-shrink-0"><span class="text-primary">{{item.startDate}} - {{item.endtDate}}</span></div>
+            <div class="flex-shrink-0"><span id="date">{{item.startDate}} - {{item.endtDate}}</span></div>
         </div>        
     </div>
 </section>

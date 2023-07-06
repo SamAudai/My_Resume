@@ -3,8 +3,8 @@
     <div class="resume-section-content">
         <h2 class="mb-5">{{name}}</h2>
         <ul *ngFor="let item of courses">
-            <li class="mb-4">
-                <span><i class="fas fa-trophy text-warning"></i></span>
+            <li class="mb-4" id="course">
+                <span id="trophy"><i class="fas fa-trophy"></i></span>&nbsp;&nbsp;
                 {{item.certificate}} / {{item.university}} / {{item.date}}
             </li>            
         </ul>
