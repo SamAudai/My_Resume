@@ -27,7 +27,7 @@ export const SKILLS: skills[] = [
     {
       id: 3,
       name: " ",
-      image: "assets/img/sass.svg",
+      image: "assets/img/react.svg",
       value: 0      
     },
     {
@@ -76,6 +76,12 @@ export const SKILLS: skills[] = [
       id: 11,
       name: " ",
       image: "assets/img/mongodb.svg",
+      value: 0      
+    },
+    {
+      id: 12,
+      name: " ",
+      image: "assets/img/sqlite-white.svg",
       value: 0      
     }
   ]

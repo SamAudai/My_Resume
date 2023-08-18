@@ -5,7 +5,7 @@
         <ul *ngFor="let item of courses">
             <li class="mb-4" id="course">
                 <span id="trophy"><i class="fas fa-trophy"></i></span>&nbsp;&nbsp;
-                {{item.certificate}} / {{item.university}} / {{item.date}}
+                <a href={{item.website}} target="_blank">{{item.certificate}} / {{item.university}} / {{item.date}}</a>
             </li>            
         </ul>
     </div>
